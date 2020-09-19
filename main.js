@@ -52,11 +52,32 @@ function replaceAll(s1, s2, s3) {
 /// important stuff
 
 const allChars = [
-  "Alex", "Ali", "Alice", "Andy", "Ang", "Benj", "Cass", "Cait", "Ceri", "Dinah", "Ella",
-  "Ferdinand", "George", "Hubert", "Jen", "Jer", "Jorge",
-  "Mari", "Mirra", "Lauren", "Lori", "Luna", "Naomi", "Nat", "Phoebe",
-  "Remy", "Roberto", "Sam", "Sarah", "Sora", "Ted", "Terra", "Vincent", "Walt",
-  "Xander", "Yann", "Zack",
+  "Adri", "Alex", "Ali", "Amy", "Alice", "Andy", "Ang", "Ani",
+  "Benj", "Bernie", "Beth", "Bryce",
+  "Cass", "Cait", "Cara", "Ceri", "Charie",
+  "Dennis", "Dinah", "Dora",
+  "Elaiza", "Ella", "Emmett", "Eugenia",
+  "Ferdinand",
+  "Gabe", "Gabi", "George", "Grace",
+  "Hahn", "Hendricks", "Hilda", "Hubert",
+  "Igneus", "Isobel",
+  "Jade", "Jen", "Jer", "Jessica", "Jorge", "Jules",
+  "Kaye",
+  "Lars", "Lauren", "Lori", "Luna", "Lys",
+  "Mari", "Miguel", "Mirra",
+  "Naomi", "Nat",
+  "Olga", "Oscar",
+  "Pascal", "Pete", "Phoebe",
+  "Quentin",
+  "Randall", "Remy", "Roberto", "Roxas",
+  "Sam", "Sandoval", "Sarah", "Siobhan", "Sora",
+  "Ted", "Tegwen", "Terra", "Tom", "Trip",
+  "Uma",
+  "Ventus", "Vincent",
+  "Walt",
+  "Xander",
+  "Yann", "Yazmin", "Yuri", "York",
+  "Zack", "Zane",
 ];
 
 const allStats = [
