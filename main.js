@@ -545,12 +545,9 @@ setInterval(function() {
   }
 }, 4000);
 
-// show b-day msg + confetti iff #showbdaymsg hash present in url
-if (window.location.hash && window.location.hash === "#showbdaymsg") {
-  bdaymsg.style.display = "block";
-
-  // confetti code copied from "realistic look" example:
-  // https://www.kirilv.com/canvas-confetti/
+// confetti code copied from "realistic look" example:
+// https://www.kirilv.com/canvas-confetti/
+function fireConfetti() {
   var count = 500;
   var defaults = {origin: { y: 0.7 }};
   function fire(particleRatio, opts) {
@@ -565,10 +562,21 @@ if (window.location.hash && window.location.hash === "#showbdaymsg") {
   fire(0.1,  {spread: 120, startVelocity: 45,});
 }
 
+function isBday() {
+  return window.location.hash === "#showbdaymsg";
+}
+
+// show b-day msg + confetti iff #showbdaymsg hash present in url
+if (isBday()) {
+  bdaymsg.style.display = "block";
+  fireConfetti();
+}
+
 // destroy the sim and gen a new one when the button is clicked
 destroySimButton.onclick = function(ev) {
   ev.preventDefault();
   theSim = genSim();
   currentPair = undefined;
   convoLog.innerHTML = "";
+  if (isBday()) fireConfetti();
 };
