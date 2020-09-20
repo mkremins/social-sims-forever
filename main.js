@@ -545,9 +545,24 @@ setInterval(function() {
   }
 }, 4000);
 
-// show b-day msg iff #showbdaymsg hash present in url
+// show b-day msg + confetti iff #showbdaymsg hash present in url
 if (window.location.hash && window.location.hash === "#showbdaymsg") {
   bdaymsg.style.display = "block";
+
+  // confetti code copied from "realistic look" example:
+  // https://www.kirilv.com/canvas-confetti/
+  var count = 500;
+  var defaults = {origin: { y: 0.7 }};
+  function fire(particleRatio, opts) {
+    confetti(Object.assign({}, defaults, opts, {
+      particleCount: Math.floor(count * particleRatio)
+    }));
+  }
+  fire(0.25, {spread: 26, startVelocity: 55,});
+  fire(0.2,  {spread: 60,});
+  fire(0.35, {spread: 100, decay: 0.91,});
+  fire(0.1,  {spread: 120, startVelocity: 25, decay: 0.92,});
+  fire(0.1,  {spread: 120, startVelocity: 45,});
 }
 
 // destroy the sim and gen a new one when the button is clicked
