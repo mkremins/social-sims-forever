@@ -52,7 +52,7 @@ function replaceAll(s1, s2, s3) {
 /// important stuff
 
 const allChars = [
-  "Adri", "Alex", "Ali", "Amy", "Alice", "Andy", "Ang", "Ani",
+  "Adri", "Alex", "Ali", "Amy", "Alice", "Andy", "Ang", "Ani", "Aqua",
   "Benj", "Bernie", "Beth", "Bryce",
   "Cass", "Cait", "Cara", "Ceri", "Charie",
   "Dennis", "Dinah", "Dora",
